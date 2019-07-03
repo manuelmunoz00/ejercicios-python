@@ -49,7 +49,7 @@ print(bAnd)
 booleano3 = not booleano2
 print(booleano3)
 
-
+# Listas
 lista = ["uno", 2, "tres", True]
 lista[0] = 1
 print(lista[0])
@@ -59,19 +59,60 @@ print(lista2)
 
 lista3 = lista[-1]
 print(lista3)
+print(type(lista))
 
+# tuplas
+tupla = (1, True, "Hola")
+print(type(tupla))
+# tupla[0] = "Hola"
+print(tupla)
 
+# Diccionarios (sin indices)
+diccionario = {'nombre': 'Manuel', 'apellido_paterno': 'Muñoz', 'apellido_materno': 'Ayala', 'notas': [1, 2, 3]}
+print(diccionario['notas'])
 
+# operadores relacionales
+v = 6
+b = 6
+c = v == b
+d = v != b
+meq = v > b
+maq = v < b
+print(c)
+print(d)
+print(meq)
+print(maq)
 
+# comparando cadenas
+c1 = 'Hola'
+c2 = 'Hola'
+c3 = c1 == c2
+print(c3)
 
+edad = input()
+if int(edad) >= 18 < 65:
+    print('Eres mayor de edad y solo adulto')
+elif int(edad) >= 18 >= 65:
+    print('Eres mayor de edad y adulto mayor')
+else:
+    print('No eres mayor de edad')
+print('Esto se ejecuta siempre')
 
+while int(edad) < 18:
+    print(edad)
+    edad = int(edad) + 1
 
+for x in lista:
+    print(x)
 
-class Perro(Animal):
-    pass
+def funcion_sumar(num1)
 
 
 class Animal():
+    pass
+
+
+class Perro(Animal):
     pass
 
 
