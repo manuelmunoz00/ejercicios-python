@@ -1,0 +1,27 @@
+class animal:
+    patas = 8
+    dedos = []
+
+    @staticmethod
+    def caminar():
+        print("camina")
+
+    @classmethod
+    def saltar(cls):
+        cls.caminar()
+
+
+animal.saltar()
+a = animal()
+a.patas = 9
+b = animal()
+
+
+def sexo():
+    pass
+
+
+animal.sexo = sexo
+
+# https://stackoverflow.com/questions/14140914/how-to-use-socket-fetch-webpage-use-python
+# https://www.binarytides.com/receive-full-data-with-the-recv-socket-function-in-python/
