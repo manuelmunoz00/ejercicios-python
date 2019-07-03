@@ -33,3 +33,23 @@ objeto_paloma.volar()
 engendro = Engendro()
 engendro.volar(False)
 
+# Clases decoradoras
+
+
+class Decorador(object):
+    """Mi clase decoradora"""
+    def __init__(self, funcion):
+        self.funcion = funcion
+
+    def __call__(self, *args, **kwargs):
+        print('Funcion ejecutada: ' + self.funcion.__name__)
+        self.funcion(*args, **kwargs)
+
+
+@Decorador
+def resta(valor1, valor2):
+    print(int(valor1) - int(valor2))
+
+
+resta(2064, 2020)
+

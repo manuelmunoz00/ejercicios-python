@@ -105,8 +105,6 @@ while int(edad) < 18:
 for x in lista:
     print(x)
 
-def funcion_sumar(num1)
-
 
 class Animal():
     pass
