@@ -11,3 +11,7 @@ if x is y:
     print('ok')
 else:
     print('nok')
+
+# print(str(None))
+print((str(None)is None))
+print(id(None))
